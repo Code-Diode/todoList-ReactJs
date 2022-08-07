@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+:root {
+    --salmon-pink: #eda28a;
+    --dark-blue: #124c81;
+    --gray: #99a8bb;
+}
+
+body,html{
+    padding:0;
+    margin:0;
+    height: 100%;
+    background-color: var(--salmon-pink);
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    /* background-image: url('./woodenTable.jpg');  */
+    background-repeat:repeat;
+    font-family: kalam;
+    font-weight: 400;
+    text-align: center;
+}
+
+  /* CONTAINER */
+.container {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    color: var(--dark-blue);
+    background-image: url('./lined_paper.png');
+    background-position: center;
+    background-repeat: bo-repeat;
+    background-size: contain;
+    height: auto;
+    min-height: 500px;
+    min-width: 400px;
+    max-width: 500px;
+    width: fit-content;
+    transform: rotate(2deg) translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px var(--gray) ;
+}
+
+/* INPUT AREA */
+.input-area .heading {
+    padding: 10px;
+    margin:10px;
+    width: fit-content;
+    display: inline-block;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.input-area input {
+    padding: 5px;
+    width: 75%;
+    background-color: transparent;
+    margin-right: 10px;
+    font-family: kalam;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--dark-blue);
+    border: solid 1px var(--dark-blue);
+    border-radius: 10px 15px 15px 4px/3px 5px 3px 10px;
+  }
+
+.input-area input:focus{
+  outline: none ;
+}
+
+.input-area button, .circle-checkbox {
+  transition: all .5s ease-in-out;
+}
+
+.input-area button {
+    min-width: 50px;
+    background-color: transparent;
+    font-family: kalam;
+    font-size: 1rem;
+    cursor: pointer;
+    border:transparent solid 1px;
+    border-radius: 10px 15px 15px 4px/3px 5px 3px 10px;
+    
+    box-shadow: var(--dark-blue) 0 0 0 1px;
+  }
+
+.input-area button:hover{
+  background-color: var(--salmon-pink);
+  box-shadow: none;
+}
+
+/* \TODO LIST AND ITEM */
+
+.todos-list {
+  margin-top:15px;
+}
+
+.todo-item {
+    text-align: left;
+    margin-left:5px;
+}
+
+.todo-item p{
+    display: inline;
+}
+
+
+
